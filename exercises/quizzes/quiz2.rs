@@ -34,7 +34,6 @@ mod my_module {
                 Command::Uppercase => outputs.push(string.to_uppercase()),
                 Command::Trim => outputs.push(string.trim().to_string()),
                 Command::Append(n) => outputs.push(string + "bar".repeat(n).as_str()),
-                _ => panic!("Unknown command!"),
             }
         }
 
